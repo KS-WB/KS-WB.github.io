@@ -23,8 +23,8 @@
                 animation: gradientBG 60s ease infinite;
                 position: absolute;
                 z-index: -2;
-                width: 1920px;
-                height: 1080px;
+                width: 100vw;
+                height: 100vh;
             }
 
             @-webkit-keyframes gradientBG {
@@ -63,7 +63,7 @@
                 margin: 0;
                 position: fixed;
                 padding-right: 5px;
-                width: 5%;
+                max-width: 5%;
                 height: 100%;
                 border-right: 4px solid #0047ff;
                 box-shadow: 15px 0px 20px -20px white;
@@ -71,9 +71,10 @@
            
             .menu-item {
                 width: 83%;
-                height:83%;
-                padding-left: 10px;
-                padding-bottom: 5px;
+                height:auto;
+                padding-left: 11%;
+                padding-bottom: 5%;
+                
                 filter: drop-shadow(0px -1px 2px white);
             }
 
@@ -82,6 +83,15 @@
                 cursor: not-allowed;
                 pointer-events: none;
             }
+            
+            .test{
+                display:flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-between;
+            }
+
+            
         </style>
     </head>
 
@@ -89,36 +99,36 @@
         <div id="background-div">
             <div style="border: 0px solid blue; cursor: pointer;">
                 <nav id="menu-bar">
-                    <div id="manu-inner">
-                        <div>
-                            <a class="" href=""><img class="menu-item" style="padding-top: 10px;" src="https://i.imgur.com/j9Ahw9q.png" /></a>
+                    <div class="test" id="manu-inner" >
+                        <div class="marg">
+                            <a href=""><img class="menu-item" style="padding-top: 10px;" src="https://i.imgur.com/j9Ahw9q.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/IOh52pE.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/IOh52pE.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/KIr5m5o.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/KIr5m5o.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href=""><img class="menu-item" src="https://i.imgur.com/F1oHSwJ.png" /></a>
+                        <div class="marg">
+                            <a href=""><img class="menu-item" src="https://i.imgur.com/F1oHSwJ.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/i00tgW6.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/i00tgW6.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/llhVBiG.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/llhVBiG.png" /></a>
                         </div>
-                        <div>
+                        <div class="marg">
                             <a class="" href=""><img class="menu-item" src="https://i.imgur.com/XPGwDRs.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/8p7WmTI.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/8p7WmTI.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/Ii19JBW.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/Ii19JBW.png" /></a>
                         </div>
-                        <div>
-                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/hymE2Pn.png" /></a>
+                        <div class="marg">
+                            <a href="../"><img class="menu-item" src="https://i.imgur.com/hymE2Pn.png" /></a>
                         </div>
                     </div>
                 </nav>
